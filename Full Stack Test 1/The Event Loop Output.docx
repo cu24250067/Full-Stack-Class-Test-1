@@ -1,0 +1,7 @@
+Output -> 
+A
+D
+C
+B
+
+Reason -> Synchronous code runs first (A, D). Promise callbacks are microtasks and execute before timer callbacks, so C comes before B.
